@@ -72,8 +72,7 @@ function setupFile(fileName , callback)
 
 	// setup base mesh
 	fs.readFile('data/' + fileName + '_out_base.json', 'utf8' , function (err , data) {
-		if (err)
-		{
+		if(err){
 			return console.log(err);
 		}
 
@@ -209,19 +208,17 @@ function setupFile(fileName , callback)
 
 		//console.log(pmMesh.splits.length);
 
-		for (var i = 0 ; i < pmMesh.splits.length ; i += trunkCount)
+		for (var i = 0 ; i < pmMesh.splits.length ; i += trunkCount)///20个一组进行划分
         {
             var trunkSplits = [];
             var count = Math.min(trunkCount , pmMesh.splits.length - i);
-            for (var ti = 0 ; ti < count ; ++ti)
-            {
-                trunkSplits.push(pmMesh.splits[i + ti]);
+            for (var ti = 0 ; ti < count ; ++ti){//除了最后一个外count的值为20
+                trunkSplits.push(pmMesh.splits[i + ti]);//json中的数据是trunkSplits
             }
-
             fs.writeFileSync('viewer/' + fileName + '/pm/pmmesh' + (i / trunkCount) + '.json' , JSON.stringify(trunkSplits , null, "\t"));
         }
 
-        fs.writeFileSync('viewer/' + fileName + '/pm/desc.json' , JSON.stringify({splitCount: (i / trunkCount)} , null, "\t"));
+        fs.writeFileSync('viewer/' + fileName + '/pm/desc.json' , JSON.stringify({splitCount: (i / trunkCount)} , null, "\t"));//记录PM文件的个数
 
 		loadCallback();
 	});

@@ -12,7 +12,7 @@
 //输出的数据：处理基网格、分解PM信息、复制骨骼（提供索引）
 var fs = require('fs');
 
-fs.readFile('123.txt', 'utf8' , function (err , data) {
+fs.readFile('test.glb', 'utf8' , function (err , data) {
     console.log(data);
 });
 
