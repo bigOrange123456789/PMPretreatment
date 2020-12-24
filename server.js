@@ -1,3 +1,7 @@
+//值得学习的内容：
+//创建json文件
+//删除文件
+
 var fileName = process.argv[2];
 ///process.argv存储输入的命令
 ///node server.js ***
@@ -5,6 +9,8 @@ var fileName = process.argv[2];
 ///path2/server.js
 ///***输入的第三个参数
 
+//可供处理的数据有三部分：基网格、PM过程、骨骼
+//输出的数据：处理基网格、分解PM信息、复制骨骼（提供索引）
 var fs = require('fs');
 var express = require('express');
 var app = express();
@@ -33,6 +39,7 @@ function setupFile(fileName , callback)
             files = fs.readdirSync(path);
             files.forEach(function(file,index){
                 var curPath = path + "/" + file;
+                console.log(curPath);
                 if(fs.statSync(curPath).isDirectory()) { // recurse
                     deleteFolderRecursive(curPath);
                 } else { // delete file
