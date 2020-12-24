@@ -22,6 +22,7 @@
 <h1>
     fs文件系统
     <h2>
+        //删除文件或文件夹
         var fs = require('fs');
         fs.existsSync(path)//似乎是判断某个文件是否存在，存在为true，不存在为false
         files = fs.readdirSync(path);//读取文件夹//将文件夹中所有东西的名称都存入数组中
@@ -33,6 +34,10 @@
 
 
         files.forEach(function(file,index){});//遍历数组中的内容
+    </h2>
+    <h2>
+        创建文件//创建txt和json文件的方式相似
+        fs.writeFile('test.txt' , JSON.stringify(jsonMesh , null, "\t") , function(){});
     </h2>
 </h1>
 <h1>
