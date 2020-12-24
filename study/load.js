@@ -15,4 +15,3 @@ var fs = require('fs');
 fs.readFile('test.glb', 'utf8' , function (err , data) {
     console.log(data);
 });
-
