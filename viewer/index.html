@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PM3D</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background:#fff;
+				color:#fff;
+				padding:0;
+				margin:0;
+				overflow:hidden;
+				font-family:georgia;
+				text-align:center;
+				font-family: 微软雅黑,"Microsoft YaHei"!important;
+			}
+			a { color:skyblue; text-decoration:none }
+			#info {
+				position: absolute;
+				width: 100%;
+			}
+			
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255,255,255,0.0);
+				opacity: 1;
+				pointer-events: none;
+				transition: opacity 0.5s ease-in-out;
+			}
+			
+			#instructions {
+				width: 100%;
+				height: 100%;
+				display: -webkit-box;
+				display: -moz-box;
+				display: box;
+				-webkit-box-orient: horizontal;
+				-moz-box-orient: horizontal;
+				box-orient: horizontal;
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+				color: #ffffff;
+				text-align: center;
+				cursor: pointer;
+				background-color: transparent;
+			}
+
+			.spinner {
+			  width: 40px;
+			  height: 40px;
+
+			  position: relative;
+			  margin: 100px auto;
+			  background-color: transparent;
+			}
+			
+			.double-bounce1, .double-bounce2 {
+			  width: 100%;
+			  height: 100%;
+			  border-radius: 50%;
+			  background-color: #eee;
+			  opacity: 0.6;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+
+			  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+			  animation: sk-bounce 2.0s infinite ease-in-out;
+			}
+
+			.double-bounce2 {
+			  -webkit-animation-delay: -1.0s;
+			  animation-delay: -1.0s;
+			}
+			
+			@-webkit-keyframes sk-bounce {
+			  0%, 100% { -webkit-transform: scale(0.0) }
+			  50% { -webkit-transform: scale(1.0) }
+			}
+
+			@keyframes sk-bounce {
+			  0%, 100% {
+			    transform: scale(0.0);
+			    -webkit-transform: scale(0.0);
+			  } 50% {
+			    transform: scale(1.0);
+			    -webkit-transform: scale(1.0);
+			  }
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="pminfo" style="position:absolute; z-index:2; left:10px; top:10px;display:inline">
+
+		</div>
+
+		<div id="blocker">
+			<div id="instructions">
+				<div class="spinner" id="loadingspinner">
+				  <div class="double-bounce1"></div>
+				  <div class="double-bounce2"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/three.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+		<script src="js/libs/dat.gui.min.js"></script>
+		<script src="js/loaders/OBJLoader.js"></script>
+		<script src="js/PMLoader.js"></script>
+		<script src="js/PMAnimLoader.js"></script>
+		<script src="js/SkyboxLoader.js"></script>
+		<script>
+
+			var controls, camera, scene, renderer;
+
+			var winWidth , winHeight;
+
+			var sceneRoot = new THREE.Object3D();
+			//console.log(sceneRoot);
+			//sceneRoot.scale.set(100,100,100);
+
+            var animationMixerPM = null;
+
+            var timer = new THREE.Clock({autoStart: true});
+
+            var divInfo = document.getElementById('pminfo');
+
+			init();
+			animate();
+
+            function loadLocalFile(fileName , loadCallback)
+            {
+                var xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+                xmlhttp.onreadystatechange = function ()
+                {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+                    {
+                        if (loadCallback)
+                        {
+                            loadCallback(xmlhttp.responseText);
+                        }
+                    }
+                }
+
+                xmlhttp.open("GET", fileName, true);
+                xmlhttp.send();
+            }
+
+			function setupScene()
+			{
+                var loader = new THREE.SkyboxLoader();
+                loader.load(function (skybox)
+                {
+                    scene.add(skybox);
+
+                    loadLocalFile('startup.json',function (data)
+                    {
+                        var mainScene = JSON.parse(data).mainScene;
+
+                        // Load skinned PM Model
+                        var pmLoader = new THREE.PMLoader();
+                        pmLoader.load(mainScene, function (pmModel)
+                        {
+                            setupAnimationMixer(pmModel);
+
+                            sceneRoot.add(pmModel);
+                        });
+
+                        controls.reset();
+
+                        if (mainScene == 'fox')
+						{
+                            camera.position.copy(new THREE.Vector3(-15 , -5, 15));
+                            var targetPosition = new THREE.Vector3(0 , -5, 0);
+                            camera.lookAt(targetPosition);
+                            controls.target.copy(targetPosition);
+						}
+						else
+						{
+                            camera.position.copy(new THREE.Vector3(-30 , 0.5, 25));
+                            var targetPosition = new THREE.Vector3(0 , 0.5, 25);
+                            camera.lookAt(targetPosition);
+                            controls.target.copy(targetPosition);
+						}
+                    });
+
+                    var spinner = document.getElementById('loadingspinner');
+                    spinner.style.display = "none";
+                });
+			}
+
+			function setupAnimationMixer(pmModel)
+			{
+                animationMixerPM = new THREE.AnimationMixer(pmModel);
+                animationMixerPM.clipAction(pmModel.animations[0]).play();
+                animationMixerPM.clipAction(pmModel.animations[0]).loop = THREE.LoopRepeat;
+			}
+
+			function init() 
+			{
+				// Renderer
+				renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true});
+				renderer.autoClear = false;
+				renderer.setPixelRatio( window.devicePixelRatio );
+
+                renderer.gammaInput = true;
+                renderer.gammaOutput = true;
+               
+                winWidth = window.innerWidth;
+                winHeight = window.innerHeight;
+
+				renderer.setSize(winWidth, winHeight);
+				
+				document.body.appendChild( renderer.domElement );
+
+				// CAMERAS
+				camera = new THREE.PerspectiveCamera( 70, winWidth / winHeight, 0.1, 1000 );
+				controls = new THREE.OrbitControls(camera , renderer.domElement);
+
+				// SCENE
+				scene = new THREE.Scene();
+
+				sceneRoot.scale.x = 1.5;
+                sceneRoot.scale.y = 1.5;
+                sceneRoot.scale.z = 1.5;/**/
+
+				sceneRoot.position.set(5,-10,20);
+				//sceneRoot.translateY(-10);
+				scene.add(sceneRoot);
+				// Lights
+
+                var ambient = new THREE.AmbientLight(0xffffff , 1.5 );
+                scene.add( ambient );
+
+                var dirLight = new THREE.DirectionalLight(0xffffff , 1.5);
+                scene.add(dirLight);
+
+                var targetObject = new THREE.Object3D();
+                targetObject.position.x = -10;
+                targetObject.position.y = -10;
+                targetObject.position.z = -15;
+                scene.add(targetObject);
+
+                dirLight.target = targetObject;
+
+				setupScene();
+			}
+
+			function _onResize()
+			{
+			    winWidth = window.innerWidth;
+			    winHeight = window.innerHeight;
+
+                camera.aspect = winWidth / winHeight;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize(winWidth, winHeight);
+			}
+
+			function animate() 
+			{
+			    var deltaTime = timer.getDelta();
+
+				requestAnimationFrame( animate );
+
+				render();
+
+                var delta = deltaTime;
+
+				if (animationMixerPM)
+				{
+                    animationMixerPM.update(delta);
+				}
+
+				controls.update();
+
+				if (window.innerWidth != winWidth || window.innerHeight != winHeight)
+				{
+                    _onResize();
+				}
+			}
+
+			function render() 
+			{
+				renderer.render( scene, camera );
+
+                divInfo.textContent = '三角形数量: ' + renderer.info.render.triangles;
+			}
+
+		</script>
+
+	</body>
+</html>

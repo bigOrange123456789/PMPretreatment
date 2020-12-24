@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="d4ccf183-b1d0-4269-8729-584dd5e1ff78" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenes/Camera/scene.json" afterPath="$PROJECT_DIR$/scenes/Camera/scene.json" />
+    </list>
+    <ignored path="gishow.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="gishow" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+              <folding>
+                <element signature="e#3043#3510#0" expanded="false" />
+                <element signature="e#3544#3752#0" expanded="false" />
+                <element signature="e#3790#3945#0" expanded="false" />
+                <element signature="e#4010#4535#0" expanded="false" />
+                <element signature="e#4604#6425#0" expanded="false" />
+                <element signature="e#6506#7928#0" expanded="false" />
+                <element signature="e#7988#8442#0" expanded="false" />
+                <element signature="e#8521#9097#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OBJLoader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/loaders/OBJLoader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1273">
+              <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+              <folding>
+                <element signature="e#2017#9928#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssimpJSONLoader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/loaders/AssimpJSONLoader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sidebar.Material.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/Sidebar.Material.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15162">
+              <caret line="798" column="85" lean-forward="false" selection-start-line="798" selection-start-column="85" selection-end-line="798" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="three.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/three.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-506">
+              <caret line="34000" column="0" lean-forward="false" selection-start-line="34000" selection-start-column="0" selection-end-line="34000" selection-end-column="0" />
+              <folding>
+                <element signature="e#821786#823507#0" expanded="false" />
+                <element signature="e#823890#824464#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cameraCube</find>
+      <find>blocker</find>
+      <find>instructions</find>
+      <find>loadingspinner</find>
+      <find>webgl_depth</find>
+      <find>showinfo</find>
+      <find>linearfilter</find>
+      <find>dire</find>
+      <find>roughness</find>
+      <find>aoMapo</find>
+      <find>vUv2</find>
+      <find>apMap</find>
+      <find>texture2D</find>
+      <find>aoMap</find>
+      <find>aomap_fragment</find>
+      <find>THREE.WebGLRenderer</find>
+      <find>typeof</find>
+      <find>aomap</find>
+      <find>meshphon</find>
+      <find>meshphong</find>
+      <find>meshst</find>
+      <find>MeshPhongMaterial</find>
+      <find>setupScene</find>
+      <find>skybox</find>
+      <find>camera</find>
+      <find>three.js</find>
+      <find>cubeprobes</find>
+      <find>geometryLoader</find>
+      <find>JSONLoader</find>
+      <find>objectloader</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/OrbitControls.js" />
+        <option value="$PROJECT_DIR$/js/extensions/postprocessing/ShaderPass.js" />
+        <option value="$PROJECT_DIR$/BlendPass" />
+        <option value="$PROJECT_DIR$/xt3dloader.js" />
+        <option value="$PROJECT_DIR$/XT3DLoader.js" />
+        <option value="$PROJECT_DIR$/three.js" />
+        <option value="$PROJECT_DIR$/js/loaders/HDRTextureLoader.js" />
+        <option value="$PROJECT_DIR$/Three.js" />
+        <option value="$PROJECT_DIR$/js/three.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmviewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmviewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmviewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pmviewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pmloader" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pmviewer/index.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\admin\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\SvnProjects\ProgressiveMesh\trunk\pmviewer" />
+          <option name="myCopyRoot" value="E:\SvnProjects\ProgressiveMesh\trunk\pmviewer" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\SvnProjects\ProgressiveMesh\trunk\pmviewer" />
+          <option name="myCopyRoot" value="E:\SvnProjects\ProgressiveMesh\trunk\pmviewer" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4ccf183-b1d0-4269-8729-584dd5e1ff78" name="Default" comment="" />
+      <created>1473437919982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1473437919982</updated>
+      <workItem from="1473437921307" duration="8878000" />
+      <workItem from="1473567805454" duration="21501000" />
+      <workItem from="1473697597722" duration="1153000" />
+      <workItem from="1473784653979" duration="3906000" />
+      <workItem from="1473865374275" duration="907000" />
+      <workItem from="1498734076704" duration="4468000" />
+      <workItem from="1498912883253" duration="2694000" />
+      <workItem from="1498916676790" duration="3816000" />
+      <workItem from="1498927550777" duration="12535000" />
+      <workItem from="1499779428468" duration="3215000" />
+      <workItem from="1500698349700" duration="10648000" />
+      <workItem from="1501049643672" duration="21520000" />
+      <workItem from="1501297857960" duration="2856000" />
+      <workItem from="1501466765431" duration="6098000" />
+      <workItem from="1502717906092" duration="3969000" />
+      <workItem from="1502722803218" duration="2987000" />
+      <workItem from="1502850837025" duration="184000" />
+      <workItem from="1502936669252" duration="1199000" />
+      <workItem from="1503215858552" duration="498000" />
+      <workItem from="1506767153338" duration="1412000" />
+      <workItem from="1506769250961" duration="17431000" />
+      <workItem from="1507362790378" duration="7733000" />
+      <workItem from="1507443251766" duration="1196000" />
+      <workItem from="1508241660667" duration="349000" />
+      <workItem from="1508242462054" duration="7738000" />
+      <workItem from="1508250341166" duration="592000" />
+      <workItem from="1508253170347" duration="37000" />
+      <workItem from="1508253673363" duration="2802000" />
+      <workItem from="1508294048584" duration="851000" />
+      <workItem from="1508423126976" duration="168000" />
+      <workItem from="1508503012972" duration="1193000" />
+      <workItem from="1508554110605" duration="1024000" />
+      <workItem from="1510118939009" duration="1064000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="156622000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13943355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04246714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3660619" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383249">
+          <caret line="20171" column="0" lean-forward="true" selection-start-line="20171" selection-start-column="0" selection-end-line="20171" selection-end-column="0" />
+          <folding>
+            <element signature="e#821786#823507#0" expanded="false" />
+            <element signature="e#823890#824464#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xg.min.jonas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1482" lean-forward="false" selection-start-line="1" selection-start-column="1457" selection-end-line="1" selection-end-column="1482" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475798">
+          <caret line="25042" column="0" lean-forward="false" selection-start-line="25042" selection-start-column="0" selection-end-line="25042" selection-end-column="0" />
+          <folding>
+            <element signature="e#821786#823507#0" expanded="false" />
+            <element signature="e#823890#824464#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaders/OBJLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xg.min.jonas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1482" lean-forward="false" selection-start-line="1" selection-start-column="1457" selection-end-line="1" selection-end-column="1482" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475798">
+          <caret line="25042" column="0" lean-forward="true" selection-start-line="25042" selection-start-column="0" selection-end-line="25042" selection-end-column="0" />
+          <folding>
+            <element signature="e#821786#823507#0" expanded="false" />
+            <element signature="e#823890#824464#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaders/OBJLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2546">
+          <caret line="134" column="66" lean-forward="false" selection-start-line="134" selection-start-column="66" selection-end-line="134" selection-end-column="66" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Three.js" />
+    <entry file="file://$PROJECT_DIR$/js/loaders/OBJLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaders/HDRTextureLoader.js" />
+    <entry file="file://$PROJECT_DIR$/XT3DLoader.js" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaders/OBJLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XT3DLoader.js" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8740">
+          <caret line="460" column="13" lean-forward="true" selection-start-line="460" selection-start-column="13" selection-end-line="460" selection-end-column="13" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlendPass" />
+    <entry file="file://$PROJECT_DIR$/libs/three.js" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrbitControls.js" />
+    <entry file="file://$PROJECT_DIR$/Three.js" />
+    <entry file="file://$PROJECT_DIR$/libs/three.js" />
+    <entry file="file://$PROJECT_DIR$/libs/OrbitControls.js" />
+    <entry file="file://$PROJECT_DIR$/js/extensions/WaterShader.js" />
+    <entry file="file://$PROJECT_DIR$/js/extensions/Mirror.js" />
+    <entry file="file://$PROJECT_DIR$/OrbitControls.js" />
+    <entry file="file://$PROJECT_DIR$/js/extensions/postprocessing/EffectComposer.js" />
+    <entry file="file://$PROJECT_DIR$/js/extensions/postprocessing/ShaderPass.js" />
+    <entry file="file://$PROJECT_DIR$/js/extensions/postprocessing/RenderPass.js" />
+    <entry file="file://$PROJECT_DIR$/libs/three.js" />
+    <entry file="file://$PROJECT_DIR$/BlendPass" />
+    <entry file="file://$PROJECT_DIR$/XT3DLoader.js" />
+    <entry file="file://$PROJECT_DIR$/js/loaders/HDRTextureLoader.js" />
+    <entry file="file://$PROJECT_DIR$/js/xg.min.jonas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1482" lean-forward="false" selection-start-line="1" selection-start-column="1457" selection-end-line="1" selection-end-column="1482" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/three.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10013">
+          <caret line="527" column="157" lean-forward="false" selection-start-line="527" selection-start-column="157" selection-end-line="527" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Three.js" />
+    <entry file="file://E:/Siggraph2017/Global Recoloring GUI weights/LBC/apple_lbc-all_weights.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaders/AssimpJSONLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/loaders/OBJLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="e#2017#9928#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/libs/tern-threejs/threejs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="2440" column="4" lean-forward="false" selection-start-line="2440" selection-start-column="4" selection-end-line="2440" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Sidebar.Material.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15162">
+          <caret line="798" column="85" lean-forward="false" selection-start-line="798" selection-start-column="85" selection-end-line="798" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+          <folding>
+            <element signature="e#3043#3510#0" expanded="false" />
+            <element signature="e#3544#3752#0" expanded="false" />
+            <element signature="e#3790#3945#0" expanded="false" />
+            <element signature="e#4010#4535#0" expanded="false" />
+            <element signature="e#4604#6425#0" expanded="false" />
+            <element signature="e#6506#7928#0" expanded="false" />
+            <element signature="e#7988#8442#0" expanded="false" />
+            <element signature="e#8521#9097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="34000" column="0" lean-forward="false" selection-start-line="34000" selection-start-column="0" selection-end-line="34000" selection-end-column="0" />
+          <folding>
+            <element signature="e#821786#823507#0" expanded="false" />
+            <element signature="e#823890#824464#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
