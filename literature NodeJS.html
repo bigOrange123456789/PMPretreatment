@@ -33,11 +33,15 @@
         fs.statSync(curPath).isDirectory()//判断某个路径指向的是否为文件夹//Directory目录
 
 
-        files.forEach(function(file,index){});//遍历数组中的内容
+        array.forEach(function(file,index){});//遍历数组中的内容
     </h2>
     <h2>
         创建文件//创建txt和json文件的方式相似
         fs.writeFile('test.txt' , JSON.stringify(jsonMesh , null, "\t") , function(){});
+    </h2>
+    <h2>
+        读取文件//创建txt和json文件的方式相似
+        fs.readFile('123.txt', 'utf8' , function (err , data) {});
     </h2>
 </h1>
 <h1>
