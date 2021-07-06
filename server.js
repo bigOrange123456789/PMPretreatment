@@ -5,7 +5,7 @@
 var fileName = process.argv[2];
 ///process.argv存储输入的命令
 ///node server.js ***
-///path1/node.exe
+///path1/node.run_exe
 ///path2/server.js
 ///***输入的第三个参数
 
@@ -77,7 +77,7 @@ function setupFile(fileName , callback)
 		}
 
 		baseMesh = JSON.parse(data);
-		
+
 		var vertices = [];
 		var normals = [];
 		var uvs = [];
@@ -94,7 +94,7 @@ function setupFile(fileName , callback)
 			uvs.push(baseMesh.uvs[i]);
 
 	    //materials
-		materials=baseMesh.materials; 
+		materials=baseMesh.materials;
 
 		//material has some
 		for(var material_id=0;material_id<baseMesh.materials.length;material_id++)
@@ -109,7 +109,7 @@ function setupFile(fileName , callback)
 		  faces.push(tmpFaces);
 		  uvFaces.push(tmpUvFaces);
 		}
-		
+
 		///重写基网格// re-write base mesh
 		var jsonMesh = {
 			'metadata' : {
@@ -195,7 +195,7 @@ function setupFile(fileName , callback)
 		fs.writeFile('viewer/' + fileName + '/basemesh.json' , JSON.stringify(jsonMesh , null, "\t") , function(){});
 
         fs.writeFile('viewer/' + fileName + '/skeletonindex.json' , JSON.stringify(baseMesh.skeletonLibs , null) , function(){});
-		
+
 		loadCallback();
 	});
 
@@ -207,7 +207,7 @@ function setupFile(fileName , callback)
 		var trunkCount = 20;
 
 		//console.log(pmMesh.splits.length);
-
+        //console.log(pmMesh.splits.length);
 		for (var i = 0 ; i < pmMesh.splits.length ; i += trunkCount)///20个一组进行划分
         {
             var trunkSplits = [];
@@ -217,7 +217,7 @@ function setupFile(fileName , callback)
             }
             fs.writeFileSync('viewer/' + fileName + '/pm/pmmesh' + (i / trunkCount) + '.json' , JSON.stringify(trunkSplits , null, "\t"));
         }
-
+		//console.log(i,trunkCount);//0,20
         fs.writeFileSync('viewer/' + fileName + '/pm/desc.json' , JSON.stringify({splitCount: (i / trunkCount)} , null, "\t"));//记录PM文件的个数
 
 		loadCallback();
